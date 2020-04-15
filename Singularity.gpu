@@ -1,0 +1,17 @@
+Bootstrap: docker
+From: eberlric/images:latest
+
+%environment
+  SHELL=/bin/bash
+  export SHELL
+
+%setup
+
+%post
+  . /environment
+  echo 'SHELL=/bin/bash' >> /environment
+  mkdir /scratch /data 
+
+%runscript
+
+%test
