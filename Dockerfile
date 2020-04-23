@@ -1,7 +1,6 @@
 FROM nvidia/cuda
 
-RUN apt-get update && apt-get install -y \
-	  python-pip \
+RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
 	  python3-tk \
 	  python3-h5py \
 	  xvfb \
