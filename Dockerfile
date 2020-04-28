@@ -8,6 +8,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && DEBIAN_FRONTEND=noninteract
 	 
 RUN pip --no-cache-dir install \
 	  scikit-learn \
+	  numpy \
+	  pandas \
 	  numba\
 	  faiss \
 	  gpumap
