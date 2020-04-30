@@ -8,6 +8,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && DEBIAN_FRONTEND=noninteract
 	  git
 	 
 RUN pip --no-cache-dir install \
+	  llvm \
 	  scikit-learn \
 	  numpy \
 	  pandas \
